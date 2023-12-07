@@ -1,0 +1,343 @@
+body{
+    background-color: #78879f ;
+    padding: 0 ;
+    margin: 0 ;
+    font-family: sans-serif;
+}
+
+main {
+    padding: 20px ;
+    margin-left: 150px ;
+    margin-right: 150px ;
+    background-color: white ;
+}
+
+h1 {
+	text-align: center ;
+	font-size: 64px
+}
+
+.small_title {
+    font-size: 32px ;
+    text-align: center ;
+}
+
+q {
+	font-style: oblique
+}
+
+figure {
+	margin-left: auto ;
+	margin-right: auto ;
+}
+
+figcaption {
+	text-align: center ;
+	color: grey ;
+	font-size: 14px
+}
+
+img {
+    max-width: 98% ;
+    height: auto ;
+	display: block ;
+	margin-left: auto ;
+	margin-right: auto ;
+	margin-top: 15px ;
+	margin-bottom: 15px ;
+}
+
+iframe {
+    max-width: 98% ;
+	display: block ;
+	margin-left: auto ;
+	margin-right: auto ;
+	margin-top: 15px ;
+	margin-bottom: 15px ;
+}
+
+embed
+{
+    max-width: 100% ;
+	display: block ;
+	margin-left: auto ;
+	margin-right: auto
+}
+
+textarea
+{
+    vertical-align: top
+}
+
+label
+{
+    display: inline-block ;
+    text-align: right;
+    width: 120px ;
+    margin: 5px 5px ;
+}
+
+fieldset
+{
+    border: none;
+}
+
+
+
+
+
+#menu {
+    background-color: #adc3e4 ;
+    margin: 0 ;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#menu a {
+    text-decoration: none ;
+    color: black ;
+}
+
+#menu a:visited {
+    color: black ;
+}
+
+.menu_item {
+    display: inline ;
+    margin-left: 5px ;
+    margin-right: 5px ;
+    padding-top: 10px ;
+    padding-bottom: 15px ;
+    cursor: pointer;
+}
+
+.unfolding {
+    display: none ;
+    position: absolute ;
+    top: 30px ;
+    background-color: #5a85c5 ;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    list-style-type: none;
+
+}
+
+nav > ul li:active .unfolding {
+    display: block ;
+}
+
+nav > ul li:hover .unfolding {
+    display: block ;
+}
+
+.unfolding:hover {
+    display: block ;
+}
+
+.unfolding li {
+}
+
+.img_title {
+	width: 200px ;
+	height: auto
+}
+
+.title_grid {
+	display: grid ;
+	grid-template-columns: 1fr 2fr 1fr
+}
+
+.main_title {
+    margin-bottom: 30px ;
+}
+
+
+.warning {
+	color: red ;
+	font-weight: bold
+}
+
+.summary {
+    width: 400px ;
+    max-width: 80% ;
+    background-color: #e6a341 ;
+    padding-left: 20px ;
+    padding-right: 20px ;
+    padding-top: 5px ;
+    padding-bottom: 5px;
+}
+
+#summary_title {
+    font-weight: bold ;
+}
+
+
+
+
+.two_col {
+	display: grid ;
+	grid-template-columns: 1fr 1fr
+}
+
+#fake_big_title {
+	text-align: center ;
+	font-weight: bold ;
+	font-size: 36px
+}
+
+#fake_small_title {
+	text-align: center ;
+	font-size: 24px
+}
+
+#little_story{
+    background: #7dbd76 ;
+    padding-top: 30px ;
+    padding-bottom: 30px ;
+    padding-left: 20px ;
+    padding-right: 20px ;
+    margin-left: auto ;
+    margin-right: auto ;
+}
+
+.mail
+{
+    border: 2px solid grey ;
+	width: 1200px ;
+	height: auto ;
+}
+
+.small_mail 
+{
+    border: 2px solid grey ;
+	width: 600px ;
+	height: auto ;
+}
+
+.poster
+{
+    border: 2px solid grey ;
+    width: 600px ;
+    height: auto ;
+}
+
+.dialog
+{
+    margin-left: 30px ;
+}
+
+.dialog_box
+{
+    background : #eaedbd ;
+    padding: 20px ;
+}
+
+.profile_pic
+{
+    float: left ;
+    margin: 20px ;
+}
+
+
+
+.comment_section
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr
+}
+
+#comment_section_title
+{
+    font-weight: bold ;
+    font-size: 32px ;
+}
+
+.comment_block
+{
+    width: 800px ;
+    max-width: 80% ;
+    padding-left: 20px ;
+    padding-right: 20px ;
+    padding-top: 1px ;
+    padding-bottom: 1px ;
+    margin: 10px ;
+    background-color: #eaedbd
+}
+
+
+.comment
+{
+    margin-left : 50px ;
+    background-color : #dde386
+}
+
+.comment_icon
+{
+    position: relative ;
+    top: 2px ;
+    display: inline ;
+    margin-top:0 ;
+    margin-bottom:0 ;
+    margin-right: 5px ;
+}
+
+#contact
+{
+    font-family: monospace ;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+h1 {
+	font-size: 48px
+}
+
+.small_title {
+    font-size: 24px ;
+}
+
+main {
+    margin-left: 50px ;
+    margin-right: 50px ;
+}
+
+.title_grid {
+	display: grid ;
+	grid-template-columns: 1fr 3fr 1fr
+}
+
+.comment
+{
+    margin-left : 0px ;
+}
+
+}
+
+@media screen and (max-width: 767px) {
+
+h1 {
+	font-size: 32px
+}
+
+.small_title {
+    font-size: 16px ;
+}
+
+main {
+    margin-left: 0 ;
+    margin-right: 0 ;
+}
+.title_grid {
+	display: grid ;
+	grid-template-columns: 1fr 4fr 1fr
+}
+
+.comment
+{
+    margin-left : 0px ;
+}
+}

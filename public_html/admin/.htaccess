@@ -1,0 +1,4 @@
+AuthName "Es-tu Ostrovidski ?"
+AuthType Basic
+AuthUserFile ".htpasswd"
+Require valid-user

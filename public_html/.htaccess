@@ -1,0 +1,24 @@
+Options All -Indexes
+
+ErrorDocument 401 /error.php?code=401
+ErrorDocument 403 /error.php?code=403
+ErrorDocument 500 /error.php?code=500
+ErrorDocument 404 /error.php?code=404
+
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^(.*).php/
+RewriteRule .php/ .php [R=301,L]
+
+php_flag log_errors on
+php_value error_reporting 32767
+php_value error_log "admin/logs/error_log.txt"
+
+
+<RequireAll>
+Require all granted
+Require not host anonymousfox.co
+</RequireAll>
